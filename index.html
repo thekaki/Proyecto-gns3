@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Pagina Apache</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-background-color="#3498DB"><h1>Realizacion de bgp en gns3 </h1> Creado por: Carlos Mateos Samuel Cabrera Ignacio De Los Riscos Y Dario pavon</br> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Licencia de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"></a></section>
+				<section data-background-color="#3498DB"><h2>Realizacion de bgp en gns3</h2>
+						<p><strong>La instalacion de gns3 </strong>la hemos realizado en debian atraves de repositorios. En primer lugar hemos introducido los repositorios y luego lo hemos instalado.
+						comandos usados: sudo apt update, sudo apt install dirmngr, (repositorio a añadir) sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 
+F88F6D313016330404F710FC9A2FD067A2E3EF7B - echo "deb http://ppa.launchpad.net/gns3/ppa/ubuntu xenial main" |
+ sudo tee /etc/apt/sources.list.d/gns3.list, sudo apt update y sudo apt install gns3-gui </p>
+				</section>
+				<section data-background-color="#3498DB">
+					<h2></h2>
+					<p>
+						<h4><u>Preparacion de la actividad</u></h4>
+						<p>Hemos procedido a descargarnos la iso de los router y añadirlo para poder hacer uso de ellos.</p>
+					</p>
+				</section>
+				<section data-background-color="#3498DB">
+					<h4><u>Realizacion del bgp</u></h4>
+					<p>Hemos puesto 5 router, para posteriormente encenderlos y por consola meterle la configuracion basica. Acto seguido hemos configurado el ospf aislando los router de arriba y haciendo que se comuniquen los 2 router de abajo</p>
+				</section>
+				
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
